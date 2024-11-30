@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 import '../models/news_model.dart';
 
 class NewsService {
-  final String _apiKey = '558a5ca1beed46f3bcf177c0db14fd03';
+  final String _apiKey = 'YOUR API KEY';
 
   Future<List<NewsArticle>> fetchNews(String query) async {
     final String _baseUrl = 'https://newsapi.org/v2/everything';
