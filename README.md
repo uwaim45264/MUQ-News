@@ -1,90 +1,73 @@
-MUQ News App
-A modern Flutter News Application that fetches and displays news articles using the NewsAPI, with offline caching support and an intuitive UI for reading, searching, and sharing news articles.
-Features
-Fetch News Articles: Uses the NewsAPI to retrieve the latest articles based on user queries.
-Offline Caching: Utilizes Hive for offline data storage.
-Search Functionality: Perform searches for specific news topics using a custom search delegate.
-Detail View: Read detailed news articles with animations and sharing options.
-UI Animations: Integrated hero animations, shimmer loading states, and transition effects for an enhanced user experience.
-Project Structure:
-lib/
-├── models/
-│   └── news_model.dart        # Data model for news articles.
-├── providers/
-│   └── news_provider.dart     # Manages state and API interactions.
-├── screens/
-│   ├── home_screen.dart       # Home screen with a list of news articles.
-│   ├── detail_screen.dart     # Displays detailed article view.
-├── services/
-│   └── news_service.dart      # Handles API requests to NewsAPI.
-├── NewsSearchDelegate.dart    # Custom search delegate for searching articles.
-└── main.dart                  # Entry point of the application.
-Installation:
-Clone the repository:
-git clone <repository_url>
-cd <repository_name>
-Install dependencies:
-flutter pub get
-Set up NewsAPI:
+# 📰 MUQ News – Flutter News App
 
-Visit NewsAPI and obtain your API key.
-Replace the placeholder API key in news_service.dart:
-final String _apiKey = 'YOUR_NEWS_API_KEY';
-Run the application:
-flutter run
-Usage
-Main Features
-News List:
+**MUQ News** is a Flutter-based mobile news application that provides real-time news updates across various categories such as Technology, Sports, Business, and more. Built with a clean UI, this app fetches news from an API and displays it in a beautifully scrollable list with images, titles, and summaries.
 
-Displays a list of the latest news articles.
-Pull down to refresh articles.
-Search News:
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
+![NewsAPI](https://img.shields.io/badge/API-News-blue?style=for-the-badge)
 
-Tap the search icon in the app bar to open the search functionality.
-Enter keywords to find relevant news articles.
-View Details:
+---
 
-Tap on any news article to view its details, including title, description, and publication date.
-Use the Read More button to open the article in a browser.
-Share Articles:
+## 🧾 Overview
 
-Use the share button on the detail screen to share the article link.
-Dependencies
-The app uses the following Flutter packages:
+This app is built to demonstrate:
+- Integration of REST APIs in Flutter
+- Dynamic UI updates using asynchronous data
+- Category-based filtering of articles
+- Navigating between article details
+- Use of clean design patterns for readability and scalability
 
-http: For API requests.
-hive_flutter: For local storage and offline caching.
-provider: For state management.
-share_plus: To enable sharing articles.
-url_launcher: To open external links in the browser.
-shimmer: For loading animations.
-Key Files
-1. main.dart
-Entry point of the app.
-Initializes Hive and sets up the NewsProvider for state management.
-2. news_service.dart
-Handles fetching articles from the NewsAPI using HTTP requests.
-Constructs dynamic queries based on user input.
-3. news_model.dart
-Defines the NewsArticle data structure.
-Parses JSON responses from the API.
-4. news_provider.dart
-Manages application state and facilitates fetching, storing, and notifying changes in news articles.
-5. home_screen.dart
-Displays a list of news articles.
-Includes pull-to-refresh and scroll-to-top functionalities.
-6. detail_screen.dart
-Displays detailed content of a selected article.
-Includes animations and sharing functionality.
-7. NewsSearchDelegate.dart
-Custom implementation of Flutter's SearchDelegate.
-Dynamically searches and displays results.
-Future Enhancements
-Category Filtering: Add options to filter news by categories like "Business", "Technology", etc.
-Offline Mode: Display cached articles when offline.
-Push Notifications: Notify users of breaking news.
-User Preferences: Allow users to customize themes or default search queries.
+---
 
-DEVELOPER: 
-SOFTWARE ENGINEER 
-MUHAMMAD UWAIM QURESHI
+## ✨ Features
+
+- 🗞️ Latest breaking news headlines
+- 📂 Filter news by category (Tech, Sports, etc.)
+- 🖼️ News cards with thumbnails, title & summary
+- 🌐 Open full article in browser
+- 🔁 Pull-to-refresh and smooth loading UI
+
+---
+
+## 🚀 Getting Started
+
+### ✅ Prerequisites
+
+- Flutter SDK (>= 3.7.2)
+- A working News API key (like [newsapi.org](https://newsapi.org))
+- Android Studio / VS Code with Flutter extension
+
+---
+
+## 🛠 Installation
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/uwaim45264/MUQ-News.git
+```
+## 🧰 Technologies Used
+Flutter – UI framework
+
+Dart – Programming language
+
+HTTP package – API requests
+
+Provider / setState – State management
+
+URL Launcher – Open article links
+
+## 💡 Future Enhancements
+🔍 Search functionality
+
+💾 Offline news caching
+
+🎨 Dark mode
+
+🔔 Push notifications for top stories
+
+## 📄 License
+This project is licensed under the MIT License.
+
+## 👨‍💻 Author
+Muhammad Uwaim Qureshi
+GitHub: @uwaim45264
